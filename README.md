@@ -13,9 +13,7 @@
     1. When the defender's HP is reduced to zero or below, remove the enemy from the defender area. The player character can now choose a new opponent.
 1. The player wins the game by defeating all enemy characters. The player loses the game the game if their character's HP falls to zero or below.
 
-
-
-#Option 2 Game design notes
+## Option 2 Game design notes
 
 1. Each character in the game has 3 attributes: Health Points, Attack Power and Counter Attack Power.
 1. Each time the player attacks, their character's Attack Power increases by its base Attack Power. 
