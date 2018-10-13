@@ -1,0 +1,80 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Star Wars RPG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/star-wars.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+
+    <div id="starwars-demo" class="starwars-demo">
+        <img src="https://cssanimation.rocks/demo/starwars/images/star.svg" alt="Star" class="star">
+        <img src="https://cssanimation.rocks/demo/starwars/images/wars.svg" alt="Wars" class="wars">
+        <h2 class="byline" id="byline">THE BATTLE ZONE</h2>
+    </div>
+
+    <div id="main-content" class="container-fluid mx-auto">
+        
+        <div id="character-selection" class="row mx-auto" style="max-width: 800px; display: none">
+            <h1 class="text-center display-4 w-100">PICK YOUR CHARACTER</h1>
+            <div id="characters" class="card-deck col-12">
+                <!-- All characters go here -->
+            </div>
+        </div>
+
+        <div id="enemy-selection" class="row mx-auto" style="max-width: 800px; display: none">
+            <h1 class="text-center display-4 w-100">CHOOSE YOUR ENEMY</h1>
+            <div id="enemies" class="card-deck col-12">
+                <!-- All enemies go here -->
+            </div>
+        </div>
+
+        <div id="fight-section" class="row mx-auto" style="max-width: 800px; display: none">
+            <h1 class="text-center display-4 w-100">THE BATTLE ZONE</h1>
+
+            <div id="selected-character" class="card-deck col-3">
+                <!-- Selected fighter goes here -->
+            </div>
+        
+            <div id="battle-area" class="card border-warning mx-3 mb-3 mt-3 col-6">
+                <div class="card-img-overlay m-0 p-0 d-flex flex-column justify-content-center ">
+                    <span class="blinking text-center">CLICK ON ENEMY TO ATTACK</span>
+                </div>
+            </div>
+
+            <div id="defender" class="card-deck col-3">
+                <!-- Defender goes here -->
+            </div>
+
+        </div>
+
+        <div id="fight-information-section" class="row mx-auto mb-3 border-warning" style="max-width: 800px; display: none">
+            <div class="col-12">
+                <div id="fight-information" class="jumbotron border-warning">
+
+
+                </div>
+        </div>
+        </div>
+
+        <div id="remaining-enemies-section" class="row mx-auto" style="max-width: 800px; display: none">
+            <h1 class="text-center display-4 w-100">REMAINING ENEMIES</h1>
+            <div class="col-3"></div>
+            <div class="card-deck col-6">
+                <!-- Remaining enemies go here -->
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+    </div>
+
+    <script src="assets/javascript/star-wars.js"></script>
+</body>
+</html>
