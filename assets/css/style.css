@@ -8,11 +8,13 @@
 }
 
 #fight-information {
-    background: url("../images/petranaki-arena.jpg") no-repeat center center; 
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
+    background: #000 url(https://cssanimation.rocks/demo/starwars/images/bg.jpg);
+    color: darkgreen; 
+
+    color: darkred; border: 1px solid red;
+    /* color: darkblue; border: 1px solid blue;
+    color: darkgreen; border: 1px solid green; 
+    color: #590563; border: 1px solid purple;  */
 }
 
 #main-content{
