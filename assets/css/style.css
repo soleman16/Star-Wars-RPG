@@ -9,9 +9,8 @@
 
 #fight-information {
     background: #000 url(https://cssanimation.rocks/demo/starwars/images/bg.jpg);
-    color: darkgreen; 
 
-    color: darkred; border: 1px solid red;
+    color: darkred;
     /* color: darkblue; border: 1px solid blue;
     color: darkgreen; border: 1px solid green; 
     color: #590563; border: 1px solid purple;  */
@@ -28,7 +27,7 @@ h1 {
 }
 
 .blinking{
-    animation:blinkingText 1.2s infinite;
+    animation:blinkingText 3.0s infinite;
 }
 @keyframes blinkingText {
     0%   {  color: #f5f56e;   }
