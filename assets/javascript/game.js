@@ -9,7 +9,7 @@ var characters = [{
     {
         id: "2",
         name: "Darth Maul",
-        healthPoints: 100 ,
+        healthPoints: 125 ,
         attackPower: 12,
         counterAttackPower: 5,
         image: "assets/images/darth-maul.jpeg"
