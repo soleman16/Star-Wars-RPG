@@ -259,6 +259,8 @@ var page = {
         }
         //attack enemy
         else {
+            game.playAudio("assets/sounds/light-saber.mp3", false, 0);
+
             if (enemyHealthPoints <= 50) {
                 game.playAudio("assets/sounds/finish-him.mp3", false, 0);
             }
