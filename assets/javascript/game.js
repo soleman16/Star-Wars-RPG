@@ -86,9 +86,6 @@ var game = {
         return character;
     },
     attack: function(originalAttackPower){
-        // increment the attack power by the existing attack power
-        // + the original attack power
-        selectedCharacter.attackPower += originalAttackPower;
         // decrement enemies health points by the attack power
         defender.healthPoints -= selectedCharacter.attackPower;
 
@@ -103,6 +100,10 @@ var game = {
 
         //update the fight information section with the latest attack info
         page.updateFightSection(selectedCharacter.attackPower, defenderCounterAttackPower);
+
+        // increment the attack power by the existing attack power
+        // + the original attack power
+        selectedCharacter.attackPower += originalAttackPower;
     }, 
     isWinner: function(){
         var isWinner = false;
