@@ -86,6 +86,7 @@ var game = {
         return character;
     },
     attack: function(originalAttackPower){
+
         // decrement enemies health points by the attack power
         defender.healthPoints -= selectedCharacter.attackPower;
 
@@ -93,6 +94,8 @@ var game = {
 
         // only allow a counter attack if the enemy still has health remaining
         if(defender.healthPoints > 0){
+
+            $(page.defenderSection).find(':first-child').effect( "shake", {times:4}, 500 );
             defenderCounterAttackPower = defender.counterAttackPower;
             // decrement selectedCharacter's health points by the enemies counter attack power
             selectedCharacter.healthPoints -= defenderCounterAttackPower;
@@ -208,7 +211,7 @@ var page = {
         var selectedCharacterHealthPoints = selectedCharacter.healthPoints;
         var enemyHealthPoints = defender.healthPoints;
 
-        var selectedCharacterHealthTextElement = $("#selected-character").find("p");
+        var selectedCharacterHealthTextElement = $(page.selectedCharacterSection).find("p");
         selectedCharacterHealthTextElement.html(selectedCharacterHealthPoints + " HP");
 
         var defenderHealthTextElement = $("#defender").find("p");
@@ -221,7 +224,7 @@ var page = {
         // lose game
         if(selectedCharacterHealthPoints <= 0) {
             game.playAudio("assets/sounds/long-laugh.mp3", false, 0);
-            var selectedCharacterImageElement = $("#selected-character").find(':first-child').find("img");
+            var selectedCharacterImageElement = $(page.selectedCharacterSection).find(':first-child').find("img");
             selectedCharacterImageElement.attr("src", "assets/images/game_over.jpg")
             $(page.defenderSection).off('click');
             var battleAreaTextElement = $("#battle-area").find("span");
